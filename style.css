@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+.continer{
+    width: 280px;
+    min-width: 280px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 7px;
+}
+.img{
+    background-image: url(./images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 206px;
+    border-radius: 7px 7px 0 0;
+}
+.line{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 7px 0 0;
+    background-color: hsl(284deg 100% 37% / 50%);;
+}
+.text{
+    text-align: center;
+    padding: 25px 0;
+}
+.top-part{
+    font-size: 29px;
+    font-weight: 700;
+    font-family: 'Lexend Deca';
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+}
+span.color{
+    color: hsl(277, 64%, 61%);
+}
+.main-part{
+    font-size: 12px;
+    font-family: 'Inter';
+    margin: 0 26px 40px;
+    line-height: 22px;
+    color: hsla(0, 0%, 73%, 0.75);
+    font-weight: 400;
+}
+.amar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item{margin-bottom: 30px;}
+.number{
+    font-size: 20px;
+    font-family: 'Lexend Deca';
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+p.name{
+    font-size: 13px;
+    font-family: 'Inter';
+    margin-top: 7px;
+    color: hsl(0, 0%, 73%, 0.75);
+}
+@media screen and (min-width: 956px) {
+    .continer{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 956.19px;
+    }
+    .text{
+        width: 50%;
+        padding: 60px 100px 33px 70px;
+        text-align: start;
+    }
+    .amar{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .img{
+        background-image: url(./images/image-header-desktop.jpg);
+        background-size: contain;
+        width: 50%;
+        height: 396px;
+        border-radius: 0 7px 7px 0;
+    }
+    .line{
+        border-radius: 0 7px 7px 0;
+    }
+    .main-part{margin: 10px 0 50px;}
+}
